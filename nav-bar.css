@@ -1,0 +1,26 @@
+#nav-bar {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    gap: 60px;
+    background-color: var(--nav-bg-color);
+    
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: var(--font-primary-color);
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#nav-bar a:hover{
+        border-radius: 10px;
+        color: var(--font-secondary-color);
+        text-shadow: 0 0 10px var(--font-secondary-color);
+        text-decoration: underline;
+        cursor: pointer;
+}

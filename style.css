@@ -1,7 +1,10 @@
 @import url(reset.css);
+@import url(nav-bar.css);
+@import url(style.css);
+@import url(equipe.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
     --nav-bg-color: #021017;
@@ -16,88 +19,10 @@
 }
 
 body {
-    background-color: var(--bg-color);
-}
-#nav-bar {
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1rem;
-    gap: 60px;
-    background-color: var(--nav-bg-color);
-    
-}
-
-#nav-bar a {
-    text-decoration: none;
-    color: var(--font-primary-color);
-    font-family: var(--font-family-primary);
-    font-size: 1.5rem;
-    font-weight: 400;
-
-}
-
-h2 {
-    font-family: var(--font-family-primary);
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--font-primary-color);
-    display: flex;
-    justify-content: center;
-    padding-top: 62px;
-}
-
-#container-equipe {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    width: 1270px;
-    height: 710px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:133px;
-    
-}
-#equipe-tag {
-    width: 552px;
-    height: 312px;
-    display: flex;
-    gap: 1rem;
-    padding: 2rem;
-    margin: 0.5rem;
-    border-radius: 1rem;
-    background-color: var(--container-bg-color);
-    border-color: var(--font-secondary-color);
-    border-style: solid;
-    gap: 1.5rem;
-}
-
-#equipe-tag h3 {
-    font-family: var(--font-family-primary);
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--font-primary-color);
-    padding-bottom: 2px;
-}
-
-#equipe-tag p:first-of-type {
-    font-family: var(--font-family-secondary);
-    color: var(--font-secondary-color);
-    font-size: 1.25rem;
-    padding-bottom: 23px;
-}
-
-#equipe-tag p {
-    font-family: var(--font-family-secondary);
-    font-weight: 500;
-    font-size: 1.37 rem;
-    color: var(--font-third-color);
-    text-align: justify;
-}
-
-#equipe-tag img {
-    border-radius: 100%;
-    height: 144px;
-    width: 144px;
+    background-color: var(--bg-color);
+    justify-content: center;
 }

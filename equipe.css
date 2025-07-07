@@ -1,0 +1,121 @@
+#h2-header-container {
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    width: 1270px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: baseline;    
+}
+
+#h2-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 42px;
+    gap: 11px;
+    align-items: baseline;
+  
+}
+
+#h2-container img {
+    height: 40px;
+    width: 40px;
+}
+
+h2 {
+    font-family: var(--font-family-primary);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--font-primary-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 62px;
+}
+
+#container-equipe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 1270px;
+    height: 710px;
+    align-items: center;
+    justify-content: center;
+    margin:133px;
+}
+
+#equipe-tag {
+    width: 550px;
+    height: 310px;
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--font-secondary-color);
+    gap: 1.5rem;
+    border:  2px solid var(--font-secondary-color);
+    clip-path: polygon( 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    position: relative;
+}
+
+#equipe-tag h3 {
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--font-primary-color);
+    padding: 66px 0 2px 0;
+    padding-bottom: 2px;
+}
+#equipe-tag img {
+    border-radius: 100%;
+    height: 144px;
+    width: 144px;
+    object-fit: scale-down;
+}
+
+#equipe-tag-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+#equipe-tag-border {
+    height: 310px;
+    display: flex;    
+    gap: 20px;
+    padding: 2rem;   
+    background-color: var(--container-bg-color);
+    top: 0;
+    left: 0;
+    clip-path: polygon( 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    position: absolute;
+}
+
+#equipe-tag-section a {
+    text-decoration: none;
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--font-third-color);
+}
+
+#equipe-tag-section i {
+    color: var(--font-third-color);    
+}
+
+#equipe-tag p:first-of-type {
+    font-family: var(--font-family-secondary);
+    color: var(--font-secondary-color);
+    font-size: 1.25rem;
+    padding-bottom: 23px;
+}
+
+#equipe-tag p {
+    font-family: var(--font-family-secondary);
+    font-weight: 300;
+    font-size: 1.37 rem;
+    color: var(--font-third-color);
+    text-align: justify;
+}
