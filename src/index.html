@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="#">Projetos</a></li>
+        <li><a href="#">Equipe</a></li>
+        <li><a href="#">Faculdade</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projetos-section">
+      <h1>PROJETOS <span>💻</span></h1>
+      <p class="subtitle">//Future skills</p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="img-placeholder"></div>
+          <h2>DESCRIÇÃO</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="card">
+          <div class="img-placeholder"></div>
+          <h2>DESCRIÇÃO</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="card">
+          <div class="img-placeholder"></div>
+          <h2>DESCRIÇÃO</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projects by teammates</p>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ 
+    reset: false,
+    distance: '40px',
+    duration: 1000,
+    delay: 100 
+  });
+
+  ScrollReveal().reveal('.card', { 
+    origin: 'bottom',
+    interval: 200 
+  });
+
+  ScrollReveal().reveal('h1, .subtitle', { 
+    origin: 'top',
+    distance: '20px',
+    delay: 200 
+  });
+</script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ 
+    reset: false,
+    distance: '40px',
+    duration: 1000,
+    delay: 100 
+  });
+
+  ScrollReveal().reveal('.card', { 
+    origin: 'bottom',
+    interval: 200 
+  });
+
+  ScrollReveal().reveal('h1, .subtitle', { 
+    origin: 'top',
+    distance: '20px',
+    delay: 200 
+  });
+
+  ScrollReveal().reveal('.menu-anim li', {
+    origin: 'top',
+    distance: '20px',
+    duration: 800,
+    delay: 100,
+    interval: 150
+  });
+</script>
+
+</body>
+</html>

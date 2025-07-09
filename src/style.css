@@ -1,0 +1,138 @@
+/* Estilos base (desktop) */
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0f1c;
+  color: white;
+}
+
+header {
+  background-color: #070b14;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li a.active,
+.menu li a:hover {
+  color: #00d9ff;
+  border-bottom: 2px solid #00d9ff;
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.projetos-section h1 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #00d9ff;
+  font-size: 0.9em;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background-color: #101828;
+  border: 1px solid #00d9ff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+}
+
+.img-placeholder {
+  height: 150px;
+  background-color: #0e1a2f;
+  border: 2px solid #00d9ff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: #00d9ff;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.8em;
+  border-top: 1px solid #1a1f2e;
+}
+
+
+/* RESPONSIVIDADE */
+
+/* Telas menores que 768px (tablets e celulares em paisagem) */
+@media (max-width: 768px) {
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  main {
+    padding: 30px 10px;
+  }
+}
+
+/* Telas menores que 480px (celulares em pé) */
+@media (max-width: 480px) {
+  .projetos-section h1 {
+    font-size: 1.5em;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .img-placeholder {
+    height: 120px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
