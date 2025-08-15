@@ -1,0 +1,27 @@
+@import url(reset.css);
+@import url(style/nav-bar.css);
+@import url(style.css);
+@import url(equipe.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --nav-bg-color: #021017;
+    --bg-color: #010709;
+    --container-bg-color: #0A233A;
+    --container-border-bg-color: #0A233A;
+    --font-primary-color: #DCFEFF;
+    --font-secondary-color: #2BDEFD;
+    --font-third-color: #F9F4F4;
+    --font-family-primary: "Goldman", sans-serif;
+    --font-family-secondary: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    justify-content: center;
+}

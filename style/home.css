@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url(nav-bar.css);/*  coloquei dentro da pasta style */
+
+/* Reset CSS básico */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+:root {
+    --nav-bg-color: #021017;
+    --bg-color: #010709;
+    --container-bg-color: #0A233A;
+    --container-border-bg-color: #0A233A;
+    --font-primary-color: #DCFEFF;
+    --font-secondary-color: #2BDEFD;
+    --font-third-color: #F9F4F4;
+    --color-bg-text:#051B26;
+    --font-family-primary: "Goldman", sans-serif;
+    --font-family-secondary: "Inter", sans-serif;
+}
+.conteudo{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 10%;
+ }
+.container-titulo{
+  display: flex;
+}
+.conteudo-titulo{
+  font-family: var(--font-family-primary) ;
+  font-weight: 400;
+  font-size: 24px;
+  color:var(--font-primary-color) ;
+}
+.container-texto{
+  width: 50vw;
+  background-color: var(--color-bg-text);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  margin-top: 2em;
+}
+.conteudo-texto{
+  font-family: var(--font-family-secondary);
+  color: var(--font-primary-color);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 2em;
+}
+.background-image{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 colunas iguais */
+  grid-template-rows: repeat(4, 120px);  /* altura fixa para espaçamento vertical */
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+.perfil {
+  width: 120px;
+  height: 120px;  
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 25px 2px lightblue ; */
+  
+}
+
+/* Posicionamento manual dos elementos */
+.perfil:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  border: 3px solid #ff922b; 
+  box-shadow: 0px 0px 25px 2px #ff922b; 
+}
+.perfil:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+  border: 3px solid #a0d83c;
+  box-shadow: 0px 0px 25px 2px #a0d83c;
+}
+.perfil:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+  border: 3px solid #69cdf9;
+  box-shadow: 0px 0px 25px 2px #69cdf9;
+}
+.perfil:nth-child(4) {
+  grid-column: 2;
+  grid-row: 4;
+  border: 3px solid #01603d;
+  box-shadow: 0px 0px 25px 2px #01603d;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+}
+
+@media (max-width: 1024px) {
+
+.conteudo{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10%;
+  margin-left: 3%;
+   
+ }
+ .conteudo-titulo{
+  font-family: var(--font-family-primary) ;
+  font-weight: 400;
+  font-size: 22px;
+  color:var(--font-primary-color) ;
+}
+.container-titulo{
+  display: flex;
+  gap: 10px;
+}
+ .background-image{
+  margin-top: 8%;
+}
+  .background-image{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 colunas iguais */
+  grid-template-rows: repeat(4, 100px);  /* altura fixa para espaçamento vertical */
+  width: 100%;
+  max-width: auto;
+  position: relative;
+}
+.perfil {
+  width: 100px;
+  height: 100px;  
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 25px 2px lightblue ; */
+  
+}
+.imagem-rodape {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 2em;
+}
+}
+@media (max-width: 458px) {
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  gap: 20px;
+ }
+ .conteudo-icone{
+  width: 100px;
+ }
+ .container-texto{
+  width: 90vw;
+  background-color: var(--color-bg-text);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  margin-top: 1em;
+}
+ .conteudo-titulo{
+  font-family: var(--font-family-primary) ;
+  font-weight: 400;
+  font-size: 20px;
+  color:var(--font-primary-color) ;
+}
+ .background-image{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+  margin: 0;
+}
+.perfil {
+  width: 80px;
+  height: 80px;  
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 25px 2px lightblue ; */
+
+}
+.rodape {
+ display: none;
+
+}
+}
