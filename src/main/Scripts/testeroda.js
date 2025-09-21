@@ -13,4 +13,3 @@ function girarRoda() {
   requestAnimationFrame(girarRoda);
 }
 
-girarRoda();

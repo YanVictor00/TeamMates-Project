@@ -12,6 +12,7 @@ html, body {
   font-family: sans-serif;
 }
 body {
+  overflow-x: hidden;
   height: 100vh;
   background-color: var(--bg-color);
 }

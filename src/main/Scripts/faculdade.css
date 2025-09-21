@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:wght@400;700&display=swap');
+@import url(style/nav-bar.css);
+
 
 :root {
     --nav-bg-color: #021017;
@@ -21,6 +23,7 @@
 }
 
 body {
+    overflow-x: hidden;
     width: 100%;
     background-color: var(--bg-color);
     background-size: cover;
@@ -34,44 +37,6 @@ a {
     text-decoration: none;
 }
 
-header {
-    height: 80px;
-    width: 100%;
-    background: var(--nav-bg-color);
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    /* position: fixed; vou fixar dps*/
-    top: 0;
-}
-
-#nav-bar {
-    width: 100%;
-    font-family: var(--font-family-primary);
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1rem;
-    gap: 60px;
-    background-color: var(--nav-bg-color);
-}
-
-#nav-bar a {
-    text-decoration: none;
-    color: var(--font-primary-color);
-    font-family: var(--font-family-primary);
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-#nav-bar a:hover{
-        border-radius: 10px;
-        color: var(--font-secondary-color);
-        text-shadow: 0 0 10px var(--font-secondary-color);
-        text-decoration: underline;
-        cursor: pointer;
-}
 
   .titulo {
       font-size: 24px;

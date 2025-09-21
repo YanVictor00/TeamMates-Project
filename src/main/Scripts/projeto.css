@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url(style/nav-bar.css);
+ /*teste*/
+
+:root {
+    --nav-bg-color: #021017;
+    --bg-color: #010709;
+    --container-bg-color: #0A233A;
+    --container-border-bg-color: #0A233A;
+    --font-primary-color: #DCFEFF;
+    --font-secondary-color: #2BDEFD;
+    --font-third-color: #F9F4F4;
+    --font-family-primary: "Goldman", sans-serif;
+    --font-family-secondary: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-primary);
+  justify-content: space-around;
+  color: #fcfcfc; /* Cor principal do texto */
+  background-color: #010709; /*cor do fundo*/
+}
+
+
+.titulo-projetos {
+  padding: 84px 0 0 0;
+  left: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-family: var(--font-family-primary);
+}
+
+.icone-notebook{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 14px;
+  
+}
+
+.h2-container{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  gap: 11px;
+}
+
+.container-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 59.86px 0 200px 0;
+}
+
+.imagem-projeto {
+  width: 396px;
+  height: 233px;
+  border-radius: 60px;
+  background-color: var(--container-border-bg-color);
+}
+
+.titulo-descricao {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--font-secondary-color);
+  gap: 26px;
+  padding: 26px 0 0 0;
+}
+
+.texto-descricao {
+  font-size: 16px;
+  color: var(--font-third-color);
+}
+
+.rodape{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 81px 0;
+}
